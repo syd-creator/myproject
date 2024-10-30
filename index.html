@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real Estate Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Modal structure -->
+    <div id="agentModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h3 id="agentName"></h3>
+            <p id="agentRole"></p>
+            <p id="agentDetails"></p>
+        </div>
+    </div>
+
+    
+    <header>
+        <div class="logo">
+            <img src="logo.png" alt="Rentiz Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
+                <li><a href="buying.html">Buying</a></li>
+                <li><a href="renting.html">Renting</a></li>
+                
+                <li><a href="contactus.html">Contact Us</a></li>
+            </ul>
+        </nav>
+        <div class="auth-buttons">
+            <a href="login.html" class="login">Login</a>
+            <a href="signup.html" class="signup">Sign Up</a>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Your House is Waiting For You!</h1>
+            <p>Discover your dream home today! Whether you're buying, selling, or renting, our expert agents are here to guide you every step of the way. Your perfect home is just a click away!</p>
+            <div class="search-bar">
+                <form action="#" method="GET">
+                    <input type="text" name="location" placeholder="Search by location...">
+                    
+                    <select name="property-type">
+                        <option value="" disabled selected>Property Type</option>
+                        <option value="house">House</option>
+                        <option value="apartment">Apartment</option>
+                        <option value="condo">Condo</option>
+                        <option value="land">Land</option>
+                    </select>
+                    
+                    <input type="number" name="min-price" placeholder="Min Price" min="0">
+                    <input type="number" name="max-price" placeholder="Max Price" min="0">
+    
+                    <button type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+        <div class="hero-image">
+            <img src="hero.png" alt="Hero House Image">
+        </div>
+    </section>
+    
+
+    
+    <section class="featured">
+        <h2>Featured In</h2>
+        <div class="logos">
+            <img src="f1.png" alt="Featured Logo 1">
+            <img src="f2.png" alt="Featured Logo 2">
+            <img src="f3.png" alt="Featured Logo 3">
+            <img src="f4.png" alt="Featured Logo 4">
+        </div>
+    </section>
+
+    
+    <section class="popular-residences">
+        <h2>Popular Residence</h2>
+        <div class="residences-grid">
+            <div class="residence-carousel">
+                <div class="carousel-container">
+                    <div class="carousel-slide">
+                        <img src="house 1(a).jpg" alt="House 1 Image 1">
+                        <img src="house1(b).jpg" alt="House 1 Image 2">
+                        <img src="house1(c).jpg" alt="House 1 Image 3">
+                        <img src="house1(d).jpg" alt="House 1 Image 3">
+                        <img src="house1(e).jpg" alt="House 1 Image 3">
+                        <img src="house1(f).jpg" alt="House 1 Image 3">
+                        <img src="house1(g).jpg" alt="House 1 Image 3">
+                        <img src="house1(h).jpg" alt="House 1 Image 3">
+                        <img src="house1(i).jpg" alt="House 1 Image 3">
+                    </div>
+                    <button class="prev">&#10094;</button>
+                    <button class="next">&#10095;</button>
+                </div>
+                <div class="residence-details">
+                    <h3>Aliva Priva Jalvin</h3>
+                    <p>1087 Pin Oak Drive, Clinton, USA</p>
+                    <p>4 bed | 4 bath | 1203 sqft | 1 pool | Pet friendly |<br> 2 Garages | 3 Parking.</p>
+                </div>
+            </div>
+
+            <div class="residences-grid">
+                <div class="residence-carousel">
+                    <div class="carousel-container">
+                        <div class="carousel-slide">
+                            <img src="house2.jpg" alt="House 1 Image 1">
+                            <img src="house2(b).jpg" alt="House 1 Image 2">
+                            <img src="house2(c).jpg" alt="House 1 Image 3">
+                            <img src="house2(d).jpg" alt="House 1 Image 3">
+                            <img src="house2(e).jpg" alt="House 1 Image 3">
+                            <img src="house2(f).jpg" alt="House 1 Image 3">
+                            <img src="house2(g).jpg" alt="House 1 Image 3">
+                            <img src="house2(h).jpg" alt="House 1 Image 3">
+                        </div>
+                        <button class="prev">&#10094;</button>
+                        <button class="next">&#10095;</button>
+                    </div>
+                    <div class="residence-details">
+                        <h3>Aliva Priva Jalvin</h3>
+                        <p>1087 Pin Oak Drive, Clinton, USA</p>
+                        <p>4 bed | 4.5 bath | 954 sqft | 1 pool | Pet friendly |<br> 2 Garages.</p>
+                    </div>
+                </div>
+
+                <div class="residences-grid">
+                    <div class="residence-carousel">
+                        <div class="carousel-container">
+                            <div class="carousel-slide">
+                                <img src="house3(a).jpg" alt="House 1 Image 1">
+                                <img src="house3(b).jpg" alt="House 1 Image 2">
+                                <img src="house3(c).jpg" alt="House 1 Image 3">
+                                <img src="house3(d).jpg" alt="House 1 Image 3">
+                                <img src="house3(e).jpg" alt="House 1 Image 3">
+                                <img src="house3(f).jpg" alt="House 1 Image 3">
+                                <img src="house3(g).jpg" alt="House 1 Image 3">
+                                <img src="house3(h).jpg" alt="House 1 Image 3">
+                                <img src="house3(i).jpg" alt="House 1 Image 3">
+                            </div>
+                            <button class="prev">&#10094;</button>
+                            <button class="next">&#10095;</button>
+                        </div>
+                        <div class="residence-details">
+                            <h3>Aliva Priva Jalvin</h3>
+                            <p>1087 Pin Oak Drive, Clinton, USA</p>
+                            <p>4 bed | 3.5 bath | 957 sqft | Pet friendly |<br> 4 Garages.</p>
+                        </div>
+                    </div>
+                    
+            
+        </div>
+
+        <div>
+            
+            <a href="#" class="view-properties">View all properties</a>
+        </div>
+
+    </section>
+
+    
+    <section class="testimonials">
+        <h2>What Our Clients Say</h2>
+        <h6>Reviews(+677 Happy Customers) ⭐⭐⭐⭐⭐</h6>
+        <div class="testimonial-grid">
+            <div class="testimonial">
+                <img src="Family 1.jpeg" alt="Sarah Williams" class="testimonial-img">
+                <p>"Rentiz helped me find my dream home in no time! The process was smooth and hassle-free."</p>
+                <h4>– Sikhwari Tendani (⭐⭐⭐⭐)</h4>
+            </div>
+            <div class="testimonial">
+                <img src="Family 2.jpeg" alt="John Doe" class="testimonial-img">
+                <p>"I was able to sell my property quickly, thanks to their great agents and wide network."</p>
+                <h4>– John Doe (⭐⭐⭐⭐⭐)</h4>
+            </div>
+            <div class="testimonial">
+                <img src="Family 3.jpeg" alt="Emma Davis" class="testimonial-img">
+                <p>"Excellent customer service and support throughout the entire renting process. Highly recommend!"</p>
+                <h4>– Titos shoko (⭐⭐⭐⭐)</h4>
+            </div>
+        </div>
+    </section>
+    
+
+    
+    <section class="newsletter">
+        <h2>Subscribe to Our Newsletter</h2>
+        <p>Get the latest updates on new properties, market trends, and more.</p>
+        <form>
+            <input type="email" placeholder="Enter your email">
+            <button type="submit">Subscribe</button>
+        </form>
+    </section>
+
+    
+    <section class="agents">
+        <h2>Meet Our Agents</h2>
+        <div class="agents-grid">
+            <div class="agent">
+                <img src="agent 1.jpeg" alt="Agent 1">
+                <h3>Cameron Ngwenya</h3>
+                <p>Real Estate Agent</p>
+                <button>View Profile</button>
+            </div>
+            <div class="agent">
+                <img src="agent 2.jpeg" alt="Agent 2">
+                <h3>Danie Goosen</h3>
+                <p>Senior Agent</p>
+                <button>View Profile</button>
+            </div>
+            <div class="agent">
+                <img src="agent 3.jpeg" alt="Agent 3">
+                <h3>Kabi Fourie</h3>
+                <p>Property Specialist</p>
+                <button>View Profile</button>
+            </div>
+        </div>
+    </section>
+    
+    
+
+    
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <img src="logo.png" alt="Rentiz Logo">
+            </div>
+            <div class="footer-links">
+                <ul>
+                    <li><a href="privacypolicy.html">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                    <li><a href="contactus.html">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <p>Email: <a href="mailto:info@rentiz.com">info@realhome.com</a></p>
+                <p>Phone: <a href="tel:+18005551234">+1 (800) 555-1234</a></p>
+                <div class="social-media">
+                    <a href="#"><img src="facebook.png" alt="Facebook"></a>
+                    <a href="#"><img src="twitter.png" alt="Twitter"></a>
+                    <a href="#"><img src="instagram.png" alt="Instagram"></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Rentiz Real Estate. All Rights Reserved.</p>
+        </div>
+    </footer>
+    
+
+    <script src="script.js"></script>
+    <!-- Agent Details Modal -->
+<div id="agentModal" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <h3 id="agentName"></h3>
+        <p id="agentRole"></p>
+        <p id="agentDetails"></p>
+    </div>
+</div>
+
+</body>
+</html>
